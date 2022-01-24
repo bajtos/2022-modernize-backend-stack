@@ -1,4 +1,6 @@
-# It's time to modernize our Node.js backend stack!
+# Let's modernize Node.js backends
+
+and stop coding like it was 2013!
 
 View the slides at https://bajtos.github.io/2022-modernize-backend-stack
 

@@ -10,37 +10,88 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>It's time to modernize our Node.js backend stack</title>
+    <title>Let's modernize Node.js backends</title>
 
     <link rel="stylesheet" href="dist/reset.css">
     <link rel="stylesheet" href="dist/reveal.css">
-    <link rel="stylesheet" href="dist/theme/black.css">
+    <link rel="stylesheet" href="dist/theme/night.css">
 
     <!-- Theme used for syntax highlighted code -->
-    <link rel="stylesheet" href="plugin/highlight/monokai.css">
+    <link rel="stylesheet" href="plugin/highlight/zenburn.css">
+
+    <!-- My CSS customizations -->
+    <style>
+      :root {
+        --r-heading-font: Source Sans Pro, Helvetica, sans-serif;
+        --r-heading-line-height: 1.2;
+        --r-heading-letter-spacing: normal;
+        --r-heading-text-transform: uppercase;
+        --r-heading-text-shadow: none;
+        --r-heading-font-weight: normal;
+        --r-heading1-text-shadow: none;
+        --r-heading1-size: 2.5em;
+        --r-heading2-size: 1.6em;
+        --r-heading3-size: 1.3em;
+        --r-heading4-size: 1em;
+      }
+
+      .reveal .note {
+        font-size: 0.8em;
+        font-style: italic;
+      }
+    </style>
   </head>
   <body>
     <div class="reveal">
       <div class="slides">
-        <section>Slide 1</section>
-        <section>Slide 2</section>
 
-				<section data-auto-animate>
-					<h2 data-id="code-title">Pretty Code</h2>
-					<pre data-id="code-animation"><code class="hljs" data-trim data-line-numbers>
-						import React, { useState } from 'react';
+<!-- ======= SLIDES START ======= -->
 
-						function Example() {
-						  const [count, setCount] = useState(0);
+<section>
+  <p><br/>
+  <h1>Let's modernize our backends</h1>
+  <p>Stop coding like it was 2013!
+  <p><br/>
+  <p><br/>
+  <p style="text-align: right">Miroslav Bajtoš
+</section>
 
-						  return (
-						    ...
-						  );
-						}
-					</code></pre>
-					<p>Code syntax highlighting courtesy of <a href="https://highlightjs.org/usage/">highlight.js</a>.</p>
-				</section>
+<section>
+  <img src="img/matteo-tweet.png" />
+  <p class="note"><a
+     href="https://twitter.com/matteocollina/status/1483905860476801024">https://twitter.com/matteocollina/status/1483905860476801024</a></p>
+</section>
 
+<section>
+  <h2>About me</h2>
+  <p>Node.js core
+  <p>Node Inspector
+  <p>LoopBack.io
+  <p><br/>
+  <p>Alumni: StrongLoop, IBM
+</section>
+
+<section>
+  <p>TBD
+</section>
+
+<section>
+<section>
+  <p><br/>
+  <p><br/>
+  <h2>Thank you!</h2>
+  <p><br/>
+  <p>
+    Miroslav Bajtoš
+    <br/>
+    <a href="https://twitter.com/bajtos">twitter.com/bajtos</a>
+  <p><br/>
+  <p class="note">slides: <a
+    href="http://bajtos.github.io/2022-modernize-backend-stack/">bajtos.net/M</a>
+</section>
+</section>
+
+<!-- ======= SLIDES END ======= -->
 
       </div>
     </div>
