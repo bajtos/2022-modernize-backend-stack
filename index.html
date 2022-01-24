@@ -39,31 +39,38 @@
         font-size: 0.8em;
         font-style: italic;
       }
-    </style>
-  </head>
-  <body>
-    <div class="reveal">
-      <div class="slides">
 
-<!-- ======= SLIDES START ======= -->
+      .rainbow-text {
+        background-image: linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red);
+        -webkit-background-clip: text;
+        color: transparent;
+      }
+      </style>
+    </head>
+    <body>
+      <div class="reveal">
+        <div class="slides">
 
-<section>
-  <p><br/>
-  <h1>Let's modernize our backends</h1>
-  <p>Stop coding like it was 2013!
-  <p><br/>
-  <p><br/>
-  <p style="text-align: right">Miroslav Bajtoš
-</section>
+  <!-- ======= SLIDES START ======= -->
 
-<section>
-  <img src="img/matteo-tweet.png" />
-  <p class="note"><a
+  <section>
+    <p><br/>
+    <h1>Let's modernize our backends</h1>
+    <p><em>Stop coding like it was 2013!</em>
+    <p><br/>
+    <p><br/>
+    <p style="text-align: right">Miroslav Bajtoš
+  </section>
+
+  <section>
+    <img src="img/matteo-tweet.png" />
+    <p class="note"><a
      href="https://twitter.com/matteocollina/status/1483905860476801024">https://twitter.com/matteocollina/status/1483905860476801024</a></p>
 </section>
 
 <section>
   <h2>About me</h2>
+  <p><br/>
   <p>Node.js core
   <p>Node Inspector
   <p>LoopBack.io
@@ -72,10 +79,155 @@
 </section>
 
 <section>
-  <p>TBD
+  <section>
+  <h2>A brief history</h2>
+  </section>
+
+  <section>
+    <h2>2011-2013</h2>
+    <h3>Pioneers &amp; mad scientists</h3>
+
+    <img src="img/pioneers.jpg" height="350vw">
+    &nbsp; &nbsp; &nbsp; &nbsp;
+    <img src="img/mad-scientist.svg" height="350vw">
+
+    <p style="font-size: 0.4em" class="note">
+        Photo by <a href="https://unsplash.com/@codyengel?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Cody Engel</a>
+        on <a href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+        <br/>
+        Image by <a href="https://en.wikipedia.org/wiki/User:J.J.">J.J.</a>
+        at the <a href="https://en.wikipedia.org/wiki/">English-language Wikipedia</a>
+    <aside class="notes">
+      <p>Cool ideas, but not always practical
+      <p>Modules are often a one-man show
+    </aside>
+  </section>
+
+  <section>
+    <h2>2014-2015</h2>
+    <p class="r-fit-text rainbow-text">weird times</p>
+    <p class="fragment fade-in-then-semi-out">Adoption going up
+    <p class="fragment fade-in-then-semi-out">Core development slowing down
+    <p class="fragment fade-in-then-semi-out">Early visionaries leaving
+    <p class="fragment fade-in-then-semi-out">io.js drama
+  </section>
+
+  <section>
+    <h2>2016-2017</h2>
+    <p><br/>
+    <p class="fragment fade-in-then-semi-out">Old projects struggling
+    <p><br/>
+    <p class="fragment fade-in-then-semi-out">New projects emerging:
+    <br/><em>Pino, Fastify, Nest.js, GraphQL, Prisma</em>
+    <p><br/>
+  </section>
+
+  <section>
+    <h2>2018</h2>
+    <h3>New era begins</h3>
+    <p><br/>
+    <div class="fragment">
+    <p>async/await
+    <p>HTTP/2
+    <p>Readable streams are Async iterators
+    </div>
+  </section>
+
+  <section>
+    <h2>2019</h2>
+    <h3>Node.js 12</h3>
+    <p><br/>
+    <div class="fragment">
+      <p>Faster <code>await</code>
+      <p><code>await once(emitter, event)</code>
+      <p>Worker threads
+      <p>N-API
+    </div>
+  </section>
+  <section>
+    <h2>2019</h2>
+    <h3>ecosystem</h3>
+    <p><br/>
+    <p class="fragment fade-in-then-semi-out"><code>request</code>: officially deprecated
+    <p class="fragment fade-in-then-semi-out"><code>express</code>: the last minor version
+    <p class="fragment fade-in-then-semi-out"><code>bluebird</code>: the last version
+    <p><br/>
+  </section>
+
+  <section>
+    <h2>2020</h2>
+    <h3>Node.js 14</h3>
+    <p><br/>
+    <div class="fragment">
+      <p>Async stack traces
+      <p>Optional chaining &amp; nullish coalescing
+      <p>ESM modules
+      <p>Top-level <code>await</code>
+    </div>
+  </section>
+
+  <section>
+    <h2>2020</h2>
+    <h3>ecosystem</h3>
+    <div class="fragment">
+      <p><code>express</code>: no releases
+      <p><code>bluebird</code>: no releases
+      <p><code>winston</code>: small improvements in v3.3.0
+    </div>
+    <div class="fragment">
+      <p><code>fastify</code>: 12 minor releases
+      <p><code>pino</code>: 13 minor releases
+    </div>
+  </section>
+
+  <section>
+    <h2>2021</h2>
+    <h3>Node.js 16</h3>
+    <p><br/>
+    <div class="fragment">
+      <p><code>await setTimeout(500)</code>
+      <p><code>AbortController</code>
+      <p>Async local storage
+      <p>Diagnostics channel
+    </div>
+  </section>
+  <section>
+    <h2>2021</h2>
+    <h3>ecosystem</h3>
+    <div class="fragment">
+      <p><code>express</code>: single bugfix release
+      <p><code>bluebird</code>: no releases
+      <p><code>winston</code>: no releases
+    </div>
+    <div class="fragment">
+      <p><code>fastify</code>: 16 minor releases
+      <p><code>pino</code>: 11 minor releases + adopts worker threads
+    </div>
+  </section>
+
+  <section>
+    <h2>Jan 2022</h2>
+    <p><br/>
+    <h4>Weekly downloads:</h4>
+    <table>
+      <tr>
+        <td>bluebird
+        <td align="right">23.8M
+      <tr>
+        <td>request
+        <td align="right">20.6M
+      <tr>
+        <td>express
+        <td align="right">22.1M
+      <tr>
+        <td>winston
+        <td align="right">9.6M
+      <tr>
+        <td colspan="2" class="note" align="center">and the list goes on
+    </table>
+  </section>
 </section>
 
-<section>
 <section>
   <p><br/>
   <p><br/>
