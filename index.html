@@ -229,6 +229,139 @@
 </section>
 
 <section>
+  <section>
+    <h2>Risks</h2>
+  </section>
+
+  <section>
+    <h3>Security vulnerabilities</h3>
+    <p class="fragment">Who is going to fix them?
+    <p class="fragment">How quickly the patch will be released?
+  </section>
+
+  <section>
+    <h3>ESM is breaking the ecosystem</h3>
+    <p class="note">(ESM = EcmaScript Modules)
+    <p><br/>
+    <ol>
+      <li class="fragment">Modules are becoming ESM-only</li>
+      <li class="fragment">ESM not compatible with APM agents</li>
+    </ol>
+  </section>
+
+  <section>
+    <h3>Sub-optimal performance</h3>
+    <p><br/>
+    <div class="fragment">
+      <p>Express + Winston: ~6k req/sec
+      <p>Fastify + Pino: ~35k req/sec
+    </div>
+  </section>
+
+  <section>
+    <h3>Slower development</h3>
+  </section>
+</section>
+
+<section>
+  <img src="img/red-pill-matrix.jpg" class="r-stretch"/>
+</section>
+
+</section>
+<section>
+  <section>
+    <h2>How to choose dependencies<h2>
+  </section>
+
+  <section>
+    <p>active community of maintainers
+  </section>
+
+  <section>
+    <p><b>*active*</b>
+  </section>
+
+  <section>
+    <p><b>*community*</b>
+  </section>
+
+  <section>
+    <p>post-1.0 version
+    <p><br/>
+    <div class="fragment">
+    <blockquote style="width: 90%">
+      <p>Q: How do I know when to release 1.0.0?
+      <p>A: If your software is being used in production, it should probably already be 1.0.0
+    </blockquote>
+    <p class="note" align="right"><a href="https://semver.org/#faq">https://semver.org/#faq</a>
+    </div>
+  </section>
+
+  <section>
+    <p><code>await</code>-friendly API
+    <p>using native Promises
+  </section>
+</section>
+
+<section>
+  <section>
+    <h2>Recommended alternatives
+  </section>
+
+  <section>
+    <p><s>bluebird, q, when</s>
+    <p><br/>
+    <p>native promises
+    <p><code>async function()</code>
+    <p><code>await someAsyncFn()</code>
+  </section>
+
+  <section>
+    <p><s>request</s>
+    <p><br/>
+    <p>undici
+    <p class="note"><a href="https://github.com/nodejs/undici">https://github.com/nodejs/undici</a>
+  </section>
+
+  </section>
+  <section>
+    <p><s>winston, bunyan</s>
+    <p><br/>
+    <p>Pino logger
+    <p class="note"><a href="https://getpino.io/">https://getpino.io</a>
+    <p><br/>
+    <p class="note">Learn more:
+    <br/><a href="https://developer.ibm.com/blogs/nodejs-reference-architectire-pino-for-logging/">
+    Node.js Reference Architecture, Part 2: Logging in Node.js</a>
+  </section>
+
+  <section>
+    <p><s>express, restify</s>
+    <p><br/>
+    <p>Fastify
+    <p>Nest.js
+    <p>Hapi
+    <p><br/>
+    <aside class="notes">
+      <p>Fastify: JavaScript/FP style, lower-level
+      <p>Nest.js: Angular/Spring/OOP style, higher-level
+      <p>Hapi: If you are paranoid about supply-chain attacks
+    </aside>
+  </section>
+  <section>
+    <h3>Caveat</h3>
+    <p></br>
+    <p>avoid Jest
+    <p></br>
+    <p>use: Mocha, Ava, Tap
+  </section>
+</section>
+
+<section>
+  <p class="r-fit-text">Questions?
+</section>
+
+<section>
   <p><br/>
   <p><br/>
   <h2>Thank you!</h2>
