@@ -81,6 +81,7 @@
 <section>
   <section>
   <h2>A brief history</h2>
+  <p>of the Node.js ecosystem</p>
   </section>
 
   <section>
@@ -104,12 +105,48 @@
   </section>
 
   <section>
+    <p><br/>
     <h2>2014-2015</h2>
-    <p class="r-fit-text rainbow-text">weird times</p>
-    <p class="fragment fade-in-then-semi-out">Adoption going up
-    <p class="fragment fade-in-then-semi-out">Core development slowing down
-    <p class="fragment fade-in-then-semi-out">Early visionaries leaving
-    <p class="fragment fade-in-then-semi-out">io.js drama
+    <p class="r-fit-text rainbow-text">weird times
+    <p><br/>
+    <p><br/>
+    <aside class="notes">
+      <p>Adoption going up
+      <p>Core development slowing down
+      <p>Early visionaries leaving
+    </aside>
+  </section>
+
+  <section>
+    <h2>unhealty project</h2>
+    <img src="img/unhealthy-project.png" class="r-stretch" />
+    <p class="note">
+      (see <a
+      href="https://medium.com/the-node-js-collection/healthy-open-source-967fa8be7951">Healthy
+      Open Source</a>)
+  </section>
+
+  <section>
+    <p><br/>
+    <h2>io.js drama</h2>
+    <p class="r-stretch"><img src="img/iojs.png" />
+    <p><br/>
+    <aside class="notes">
+      <p>Only 5 core commiters, not adding new ones
+      <p>Community has forked Node.js
+      <p>Quickly added many collaborators
+      <p>Eventually the projects merged
+      <p>io.js become Node.js 4.0
+    </aside>
+  </section>
+
+  <section>
+    <h2>healthy project</h2>
+    <img src="img/healthy-project.png" class="r-stretch" />
+    <p class="note">
+      (see <a
+      href="https://medium.com/the-node-js-collection/healthy-open-source-967fa8be7951">Healthy
+      Open Source</a>)
   </section>
 
   <section>
@@ -120,11 +157,17 @@
     <p class="fragment fade-in-then-semi-out">New projects emerging:
     <br/><em>Pino, Fastify, Nest.js, GraphQL, Prisma</em>
     <p><br/>
+    <aside class="notes">
+      <p>Old projects following Node.js 0.x route,
+      <p>becoming less and less healthy
+      <p>New projects adopting io.js open approach
+      <p>and going well
+    </aside>
   </section>
 
   <section>
     <h2>2018</h2>
-    <h3>New era begins</h3>
+    <h3>breaking point</h3>
     <p><br/>
     <div class="fragment">
     <p>async/await
@@ -133,6 +176,21 @@
     </div>
   </section>
 
+  <section>
+    <h2>2019-2021</h2>
+    <h3>The great resignation</h3>
+    <div class="fragment">
+      <p><code>request</code>: officially deprecated (2019)
+      <p><code>express</code>: the last minor version (2019)
+      <p><code>bluebird</code>: the last version (2019)
+    </div>
+    <aside class="notes">
+      <p>old projects giving up under the heavy load and no inspiration
+      <p>new projects humming along, adding new features every month
+    </aside>
+  </section>
+
+  <!--
   <section>
     <h2>2019</h2>
     <h3>Node.js 12</h3>
@@ -204,6 +262,7 @@
       <p><code>pino</code>: 11 minor releases + adopts worker threads
     </div>
   </section>
+  -->
 
   <section>
     <h2>Jan 2022</h2>
@@ -231,31 +290,31 @@
 <section>
   <section>
     <h2>Risks</h2>
+    <p>of keeping old tools
   </section>
 
   <section>
     <h3>Security vulnerabilities</h3>
-    <p class="fragment">Who is going to fix them?
-    <p class="fragment">How quickly the patch will be released?
+    <aside class="notes">
+      <p>Who is going to fix them?
+      <p>How quickly the patch will be released?
+    </aside>
   </section>
 
   <section>
     <h3>ESM is breaking the ecosystem</h3>
     <p class="note">(ESM = EcmaScript Modules)
-    <p><br/>
-    <ol>
-      <li class="fragment">Modules are becoming ESM-only</li>
-      <li class="fragment">ESM not compatible with APM agents</li>
-    </ol>
+    <aside class="notes">
+      <p>Modules are becoming ESM-only</li>
+      <p>ESM not compatible with APM agents</li>
+    </aside>
   </section>
 
   <section>
     <h3>Sub-optimal performance</h3>
     <p><br/>
-    <div class="fragment">
-      <p>Express + Winston: ~6k req/sec
-      <p>Fastify + Pino: ~35k req/sec
-    </div>
+    <p>Express + Winston: ~6k req/sec
+    <p>Fastify + Pino: ~35k req/sec
   </section>
 
   <section>
@@ -265,6 +324,10 @@
 
 <section>
   <img src="img/red-pill-matrix.jpg" class="r-stretch"/>
+  <aside class="notes">
+    <p>red pill: modernize your stack
+    <p>blue pill: ignore my arguments
+  </aside>
 </section>
 
 </section>
@@ -278,23 +341,23 @@
   </section>
 
   <section>
-    <p><b>*active*</b>
+    <p>* active *
   </section>
 
   <section>
-    <p><b>*community*</b>
+    <p>* community *
   </section>
 
   <section>
     <p>post-1.0 version
-    <p><br/>
-    <div class="fragment">
+  </section>
+
+  <section>
     <blockquote style="width: 90%">
       <p>Q: How do I know when to release 1.0.0?
       <p>A: If your software is being used in production, it should probably already be 1.0.0
     </blockquote>
     <p class="note" align="right"><a href="https://semver.org/#faq">https://semver.org/#faq</a>
-    </div>
   </section>
 
   <section>
@@ -341,13 +404,16 @@
     <p>Fastify
     <p>Nest.js
     <p>Hapi
+    <p>Serverless/Lambda
     <p><br/>
     <aside class="notes">
       <p>Fastify: JavaScript/FP style, lower-level
       <p>Nest.js: Angular/Spring/OOP style, higher-level
       <p>Hapi: If you are paranoid about supply-chain attacks
+      <p>Serverless: you don't need any framework
     </aside>
   </section>
+
   <section>
     <h3>Caveat</h3>
     <p></br>
